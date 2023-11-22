@@ -19,4 +19,4 @@ def article_delete(request: HttpRequest, article):
 
 
 def create(request: HttpRequest):
-    return HttpResponse('This is create page')
+    return render(request, 'create.html')

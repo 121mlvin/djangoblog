@@ -3,11 +3,11 @@ from django.http import HttpRequest, HttpResponse
 
 
 def main(request: HttpRequest):
-    return HttpResponse('This is main page')
+    return render(request, 'index.html')
 
 
 def about(request: HttpRequest):
-    return HttpResponse('This is about page')
+    return render(request, 'about.html')
 
 
 def profile_page(request: HttpRequest, username):
@@ -27,11 +27,11 @@ def deactivate(request: HttpRequest):
 
 
 def register(request: HttpRequest):
-    return HttpResponse('This is register page')
+    return render(request, 'register.html')
 
 
 def login(request: HttpRequest):
-    return HttpResponse('This is login page')
+    return render(request, 'login.html')
 
 
 def logout(request: HttpRequest):
