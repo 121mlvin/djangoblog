@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page=)</title>
+</head>
+<body>
+
+<div style="background-color: aqua">
+    {% block content %}
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'register' %}">Register</a>
+    <a href="{% url 'main page' %}">Main Page</a>
+    <a href="{% url 'about' %}">About</a>
+    <a href="{% url 'create' %}">Create new blog</a>
+    {% endblock %}
+</div>
+<h1>This is main page</h1>
+</body>
+</html>

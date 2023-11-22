@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register=)</title>
+</head>
+<body>
+{% extends 'index.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <div style="background-color: aqua">
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'main page' %}">Main Page</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'create' %}">Create new blog</a>
+    </div>
+    <h1>This is Register Page</h1>
+{% endblock %}
+</body>
+</html>
